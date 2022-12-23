@@ -1,0 +1,34 @@
+大雕版正确教程
+只针对大雕4460QSDK，如果您不是小白那么这些操作您也可以选择适合您的方式
+打开/system/filetransfer（文件传输）
+上传文件index.htm
+打开终端，执行
+cd /tmp/upload
+chmod 0644 index.htm
+cp index.htm /usr/lib/lua/luci/view/admin_status
+刷新
+如果无法显示就
+打开/system/filetransfer（文件传输）
+cd /tmp/upload
+chmod 0755 tempinfo
+cp tempinfo /sbin
+
+志平版正确教程
+只针对ZHIPING QSDK，如果您不是小白那么这些操作您也可以选择适合您的方式
+打开/system/filetransfer（文件传输）
+上传文件index.htm和ethinfo
+打开终端，执行
+cd /tmp/upload
+chmod 0644 index.htm
+cp index.htm /usr/lib/lua/luci/view/admin_status
+chmod 0755 ethinfo
+cp ethinfo /sbin
+志平换LEAN风格LUCI
+把lede.htm重命名为index.htm
+	其他同上
+自行打下toe版温度补丁
+	打开/system/filetransfer（文件传输）
+	上传文件cpuinfo
+	cd /tmp/upload
+	chmod 0755 cpuinfo
+	cp cpuinfo /sbin
